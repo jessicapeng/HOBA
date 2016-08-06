@@ -49,7 +49,7 @@ header {
 h1 {
     font-family: 'Lobster', cursive; /* using 'Lobster' Google fonts, cursive is the default in case there is no wifi*/
     margin: 15px 0; /* top and bottom is 15px spacing, sides are 0*/
-    font-size: 1.75em; /* em is like px but relative to font */
+    font-size: 3.75em; /* em is like px but relative to font */
     line-height: 0.8em; /* spacing between fonts */
 }
 
@@ -129,6 +129,7 @@ PAGE: PORTFOLIO
 **********************************/
 
 
+
 #gallery {
     margin: 0;
     padding: 0;
@@ -137,10 +138,21 @@ PAGE: PORTFOLIO
 
 #gallery li { /* selects list li elements in ul */
     float: left; /* appear side by side instead of stacking on top of each other */
-    width: 45%; /* each image will only take up 45% of platform on any platform- desktop or phone. More explanation: 45% divides into 100% (the whole platform) 2 times with a remainder of 10% which is the spaces in between */
+    width: 80%; /* each image will only take up 45% of platform on any platform- desktop or phone. More explanation: 45% divides into 100% (the whole platform) 2 times with a remainder of 10% which is the spaces in between */
     margin: 2.5%; /* space between images not filled by width, 2.5 for each part and total margin is 4 so 4 * 2.5 = 10% which is perfect because it is the % not filled by width (45 * 2 = 90% and 100% - 90% = 10%)*/
-    background-color: #f5f5f5; /* white */
-    color: #bdc3c7; /* medium grey */
+   /* background-color: #f5f5f5; /* white */
+    /*color: #bdc3c7; /* medium grey */
+    
+}
+
+#gallery li h3 {
+    font-family: 'Quattrocento', serif;
+    line-height: 150%;
+    padding-top: 10px;
+}
+
+#gallery li img {
+    border-radius: 28px;
 }
 
 #gallery li a p {
@@ -148,6 +160,10 @@ PAGE: PORTFOLIO
     padding: 5%;
     font-size: 0.75em;
     color: #bdc3c7 /* medium grey */    
+}
+
+#homeFooter {
+    position: relative;
 }
 
 

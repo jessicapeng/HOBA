@@ -20,13 +20,14 @@
   PAGE: PORTFOLIO
   ***********************************/
   
-  #gallery li {
+  /*#gallery li {
     width: 28.3333%;
   }
   
   #gallery li:nth-child(4n) {
     clear: left;
   }
+    */
   
   /**********************************
   PAGE: ABOUT
@@ -62,16 +63,18 @@
   }
   
   h1 {
-    font-size: 2.5em;
+    font-size: 3.5em;
   }
   
   h2 {
     font-size: 0.825em;
     margin-bottom: 20px;
   }
+
+   
   
   header {
-    border-bottom: 5px solid #599a68;
+    border-bottom: 5px solid #000000;
     margin-bottom: 60px;
   }
 
