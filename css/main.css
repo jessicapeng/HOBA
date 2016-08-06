@@ -12,6 +12,7 @@ body {
     max-width: 940px;
     margin: 0 auto;
     padding: 0 5%; 
+    margin-left: 17%;
     
 }
 
@@ -47,9 +48,9 @@ header {
 }
 
 h1 {
-    font-family: 'Lobster', cursive; /* using 'Lobster' Google fonts, cursive is the default in case there is no wifi*/
+    font-family: 'Quicksand', sans-serif; /* using 'Lobster' Google fonts, cursive is the default in case there is no wifi*/
     margin: 15px 0; /* top and bottom is 15px spacing, sides are 0*/
-    font-size: 3.75em; /* em is like px but relative to font */
+    font-size: 1.75em; /* em is like px but relative to font */
     line-height: 0.8em; /* spacing between fonts */
 }
 
@@ -289,13 +290,13 @@ COLORS
 
 /* site body */
 body{
-    background-color: #fff;
+    background-color: #E4F1FE;
     color: #999;
 }
 
 /* blue header */
 header {
-    background-color:  #00ace6;
+    background-color:  rgb(67, 122, 132);
     border-color: #037ee2; 
 }
 
@@ -319,5 +320,5 @@ nav a, nav a:visited {
 
 /* when selected, what the nav link will go to */
 nav a.selected, nav a:hover { /* got rid: nav a.selected (remember to seperate with a comma) */
-    color: #0909a2;
+    color: #8585d9;
 }
