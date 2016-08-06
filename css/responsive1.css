@@ -1,0 +1,97 @@
+@media screen and (min-width: 480px) /* if it is a media screen and it is at least 480px  then it looks like this (480px is the general width of smartphones), then... */
+{
+
+    /*********************************
+    TWO COLUMN LAYOUT
+    **********************************/
+
+    #primary {
+        width: 50%;
+        float: left;
+        }
+    
+    #secondary {
+        width: 40%;
+        float: right;
+    }
+    
+     
+    body {
+        margin-top: 20%;
+    }
+    
+    #wrapper {
+        margin-top: 20%;
+    }
+    
+    
+    
+    /*********************************
+    PAGE: PORTFOLIO
+    margin space: 2.5 * (3 * 2) = 15%
+    100% - 15% = 85%
+    85 / 3 = 28.33%
+    **********************************/
+   
+    #gallery li {
+        width: 28.333%;
+        margin: 2.5%;
+    }
+    
+    #gallery li:nth-child(4n) {
+        clear: left;
+    }
+    
+    
+    
+    
+     /*********************************
+    PAGE: ABOUT
+    **********************************/
+    .profile-photo{
+        float: left;
+        margin: 0 5% 80px 0;
+    }
+}
+
+@media screen and (min-width: 660px) /*and (max-width: 800px)*/{
+
+    /*********************************
+    HEADER
+    **********************************/
+    
+    nav {
+        background: none;
+        float: right;
+        font-size: 1.125em;
+        margin-right: 5%;
+        text-align: right;
+        width: 45% ;
+        
+    }
+    
+    #logo {
+        float: left;
+        margin-left: 5%;
+        text-align: left;
+        width: 45%;
+    }
+    45
+    h1 {
+        font-size: 2.5em;
+    }
+    
+    h2 {
+        font-size: 0.825em;
+        margin-top: 2%;
+        margin-bottom: 2%;
+    }
+    
+    header {
+        border-bottom: 5px solid #89f1ff;
+        margin-bottom: 60px;
+    }
+    
+}
+
+

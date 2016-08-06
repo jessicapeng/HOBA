@@ -1,0 +1,307 @@
+/*********************************
+GENERAL 
+**********************************/
+
+/* links */
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+#wrapper {
+    max-width: 940px;
+    margin: 0 auto;
+    padding: 0 5%; 
+    
+}
+
+a {
+    text-decoration: none; /* get rid of underline */
+}
+
+img {
+    max-width: 100%; /* all img fix their whole place correctly */
+}
+
+h3{
+    margin: 0 0 1em 0;
+}
+
+
+/*********************************
+HEADING
+**********************************/
+header {
+    float: left;
+    margin: 0 0 30px 0; /* top, right, bottom, left (keeps header seperate from other content on the bottom) */
+    padding: 5px 0 0 0; /* top and then go clockwise: top, right, bottom, left (padding on top to seperate text, without removing margin)*/
+    width: 100%; 
+/*    position: absolute;*/
+/*    top: 0;*/
+}
+
+/* logo text */
+#logo {
+    text-align: center;
+    margin: 0;
+}
+
+h1 {
+    font-family: 'Lobster', cursive; /* using 'Lobster' Google fonts, cursive is the default in case there is no wifi*/
+    margin: 15px 0; /* top and bottom is 15px spacing, sides are 0*/
+    font-size: 1.75em; /* em is like px but relative to font */
+    line-height: 0.8em; /* spacing between fonts */
+}
+
+h2 {
+    font-size: 0.75em;
+    margin: -5px 0 0; /* -5px: sets top (pulls element closer to top since it is negative), 0: sets left and right, 0: sets bottom */
+    font-weight: normal; /* top and bottom is 15px spacing, sides are 0*/
+}
+
+
+/*********************************
+NAVIGATION
+**********************************/
+
+nav {
+    text-align:center;
+    padding: 10px 0; /* padding on top and bottom is 10px and 0 on left and right */
+    margin: 20px 0 0;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0 10px; /* 0px on top and bottom and 10px on left and right */
+    padding: 0;
+}
+
+nav li 
+{
+    display: inline-block;
+}
+
+nav a
+{
+    font-weight: 800;
+    padding: 15px 10px; /* padding on navigation links/ blocks so clicking them is easier because there is a broader spectrum */
+}
+
+/*********************************
+FOOTER
+**********************************/
+
+footer {
+    font-size: 0.75em;
+    text-align: center;
+    clear: both;
+    padding-top: 50px;
+    color: #ccc;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+}
+
+footer {
+    clear: both;
+}
+
+.social-icon {
+    width: 20px;
+    height: 20px;
+    margin: 0 5px;
+    position: absolute;
+    bottom: 35px;
+}
+
+footer a:first-child .social-icon {
+    left: 47%;
+}
+
+footer a:last-child .social-icon {
+    right: 38%;
+}
+
+
+/*********************************
+PAGE: PORTFOLIO
+**********************************/
+
+
+#gallery {
+    margin: 0;
+    padding: 0;
+    list-style: none; /* removes bullet points in gallery under ul*/
+}
+
+#gallery li { /* selects list li elements in ul */
+    float: left; /* appear side by side instead of stacking on top of each other */
+    width: 45%; /* each image will only take up 45% of platform on any platform- desktop or phone. More explanation: 45% divides into 100% (the whole platform) 2 times with a remainder of 10% which is the spaces in between */
+    margin: 2.5%; /* space between images not filled by width, 2.5 for each part and total margin is 4 so 4 * 2.5 = 10% which is perfect because it is the % not filled by width (45 * 2 = 90% and 100% - 90% = 10%)*/
+    background-color: #f5f5f5; /* white */
+    color: #bdc3c7; /* medium grey */
+}
+
+#gallery li a p {
+    margin: 0; /* elements have default margin, so set to 0 */
+    padding: 5%;
+    font-size: 0.75em;
+    color: #bdc3c7 /* medium grey */    
+}
+
+
+
+
+/*********************************
+PAGE: ABOUT
+**********************************/
+
+.profile-photo {
+    display: block;
+    max-width: 150px;
+    margin: 0 auto 30px;
+    border-radius: 100%;
+    
+}
+
+
+
+/*********************************
+PAGE: CONTACT
+*********************************/
+
+.contact-info {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 0.9em;
+}
+
+.contact-info a {
+    display: block; /*anchor elements will take up space (not just behind)*/
+    min-height: 20px; /*minimum height of each icon is only 20px*/
+    background-repeat: no-repeat; 
+    background-size: 20px 20px;
+    padding: 0 0 0 30px; /* only padding a left side */
+    margin: 0 0 10px;
+}
+
+.contact-info li.phone a {
+    background-image: url('../img/phone.png'); /* two dots let you go up a directory, so main.css goes out of the css file and then enteres the img file */
+}
+
+.contact-info li.email a {
+    background-image: url('../img/mail.png');
+}
+
+.contact-info li.facebook a {
+    background-image: url('../img/twitter.png');
+}
+
+form {
+    width: 50%;
+    left: 25%;
+    bottom: 15%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    position: absolute;
+    height: 60%;
+}
+
+input {
+    outline: none; /*gets rid of blue outline on edge of box*/
+/*    border: 0.2px solid #2980b9;*/
+    border: none;
+    display: block;
+    margin-top: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px;
+    padding-left: 15px;
+    font-family: 'Open Sans', sans-serif;
+    width: 60%;
+    height: 10%;
+    border-radius: 5px;
+    background-color: rgba(218, 223, 225, 0.8);
+    transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+}
+
+#submit {
+    width: 30%;
+    text-align: center;
+    background-color: rgba(46, 204, 113,1.0);
+    text-transform: uppercase;
+    color: white;
+    cursor: pointer;
+    outline: none; /*gets rid of blue outline on edge of box*/
+/*    border: 0.2px solid #2980b9;*/
+    border: none;
+    display: block;
+    margin-top: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px;
+    padding-left: 15px;
+    font-family: 'Open Sans', sans-serif;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-radius: 5px;
+    transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+}
+#submit:hover {
+    background-color: rgba(46, 204, 113,0.65);    
+}
+input:hover {
+    background-color: rgba(218, 223, 225, 0.5);
+}
+
+input:focus {
+    background-color: rgba(218, 223, 225, 0.2);
+}
+/*********************************
+COLORS
+*********************************/
+
+/* site body */
+body{
+    background-color: #fff;
+    color: #999;
+}
+
+/* blue header */
+header {
+    background-color:  #00ace6;
+    border-color: #037ee2; 
+}
+
+/* nav blue backgroundcolor  */
+nav {
+    background:#1d97fc;
+}
+
+
+h1, h2 {
+    color: #fff;
+}
+
+a {
+     color: #259bc3;
+}
+
+nav a, nav a:visited {
+    color: #fff;
+}
+
+/* when selected, what the nav link will go to */
+nav a.selected, nav a:hover { /* got rid: nav a.selected (remember to seperate with a comma) */
+    color: #0909a2;
+}
