@@ -10,7 +10,7 @@ function checkDataValidation(first_name, last_name, email, number) {
   var e = validateEmail(email);
   var p = validatePhoneNumber(number);
   return [f,l,e,p];
-}
+} //new comment added
 
 function isValid(validation) {
     var returner = true;
