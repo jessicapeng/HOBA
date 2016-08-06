@@ -147,9 +147,10 @@ PAGE: PORTFOLIO
 }
 
 #gallery li h3 {
-    font-family: 'Quattrocento', serif;
+    font-family: 'Quicksand', serif;
     line-height: 150%;
     padding-top: 10px;
+    color: black;
 }
 
 #gallery li img {
