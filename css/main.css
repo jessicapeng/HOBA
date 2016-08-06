@@ -179,8 +179,25 @@ PAGE: ABOUT
     max-width: 150px;
     margin: 0 auto 30px;
     border-radius: 100%;
-    
 }
+
+#CPCpic {
+    border-radius: 28px;
+    width: 50%;
+    margin-left: 20%;
+}
+
+#aboutHOBA {
+    font-size: 40px;
+    font-family: 'Quicksand', sans-serif;
+  
+}
+
+#HOBAparagraph {
+    font-family: 'Quicksand', sans-serif;
+}
+
+    
 
 
 
@@ -214,6 +231,13 @@ PAGE: CONTACT
 
 .contact-info li.facebook a {
     background-image: url('../img/twitter.png');
+}
+
+#textBeforeForm {
+    text-align: center;
+    margin-right: 15%;  
+    color: black;
+    font-family: 'Quicksand', sans-serif;
 }
 
 form {
@@ -302,7 +326,7 @@ header {
 
 /* nav blue backgroundcolor  */
 nav {
-    background:#1d97fc;
+    background:#6ca8d9;
 }
 
 
@@ -320,5 +344,5 @@ nav a, nav a:visited {
 
 /* when selected, what the nav link will go to */
 nav a.selected, nav a:hover { /* got rid: nav a.selected (remember to seperate with a comma) */
-    color: #8585d9;
+    color: #4395c1;
 }
