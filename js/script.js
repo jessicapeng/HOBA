@@ -31,7 +31,7 @@ function reactToDataValidation(validation) {
     } else {
         $("#first").css({
             "border": "none"
-        });       
+        });
     }
     if(!validation[1]) {
         $("#last").css({
@@ -40,7 +40,7 @@ function reactToDataValidation(validation) {
     } else {
         $("#last").css({
             "border": "none"
-        });       
+        });
     }
     if(!validation[2]) {
         $("#email").css({
@@ -49,7 +49,7 @@ function reactToDataValidation(validation) {
     } else {
         $("#email").css({
             "border": "none"
-        });       
+        });
     }
     if(!validation[3]) {
         $("#phone").css({
@@ -58,10 +58,22 @@ function reactToDataValidation(validation) {
     } else {
         $("#phone").css({
             "border": "none"
-        });       
+        });
     }
     if(isValid(validation)) {
-        alert("we can submit now!");
+      var name = $("#first").val() + " " + $("#last").val();
+      var address = $("#email").val();
+      var phone = $("#phone").val();
+      var email = "Name: " + name + " Phone number: " + phone + " Email: " + address;
+      email = "email=" + email;
+      $.ajax({
+        type: "POST",
+        url: "php.php",
+        data: email,
+        success: function() {
+          alert("successful attempt!");
+        }
+      });
     }
 }
 
@@ -89,18 +101,18 @@ function validateName(name) {
 function validatePhoneNumber(number) {
     var returner = true;
 //    alert("lol");
-    
+
     number = removeSpaces(number);
 //    alert(removeSpaces(number));
     if(returner == true) {
-        returner = number.charAt(0) == "(" && number.charAt(4) == ")";        
+        returner = number.charAt(0) == "(" && number.charAt(4) == ")";
     }
     if(returner == true) {
         var indexes = [1,2,3,5,6,7,9,10,11,12];
         var temp = true;
         for(var i = 0; i < indexes.length; i++) {
             if(isNaN(number.charAt(indexes[i]))) {
-                temp = false; 
+                temp = false;
                 break;
             }
         }
@@ -114,7 +126,7 @@ function removeSpaces(number) {
     var returner = "";
     for(var i = 0; i < number.length; i++) {
         if(number.charAt(i) != " ") {
-            returner += number.charAt(i);            
+            returner += number.charAt(i);
         }
     }
     return returner;
